@@ -1,0 +1,78 @@
+<!--------w-----------
+
+    Project 4
+    Name: Liam Fitzpatrick
+    Date: April 26, 2023
+    Description: HTML for Website Development and Deployment project "Contact Me" page.
+
+--------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="./css/p4styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Fitzpatrick | Contact Me</title>
+    <script src="./js/validation.js"></script>
+</head>
+    <body>
+        <div id="container">
+            <header>
+                Contact Me
+            </header>
+            <div id="content" role="main">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mySkills.html">My Skills</a></li>
+                        <li><a href="contactMe.html">Contact Me</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h1>Contact Me!</h1>
+                    <p>Please provide your name, phone number and email below so we can get in touch:</p>
+                    <form id="contactForm" method="post" action="index.html">
+                        <fieldset>
+                            <ul>
+                                <li>
+                                    <input id="name" name="name" type="text">
+                                    <label for="name">Name: </label>
+                                    <p class="error" id="name_error">*Name is a required field.</p>
+                                </li>
+                                <li>
+                                    <input id="phoneNumber" name="phoneNumber" type="tel">
+                                    <label for="phoneNumber">Phone Number: </label>
+                                    <p class="error" id="phoneNumber_error">*A valid ten-digit phone number is required.</p>
+                                </li>
+                                <li>
+                                    <input id="email" name="email" type="email">
+                                    <label for="email">Email: </label>
+                                    <p class="error" id="email_error">*A valid email address is requred.</p>
+                                </li>
+                                <li>
+                                    <textarea id="comments" name="comments"></textarea>
+                                    <label for="comments">Comments: </label>
+                                </li>
+                                <li>
+                                    <button type="submit">Submit</button>
+                                    <button type="reset">Reset</button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <p>Work in progress: Form Submission to be covered in Web Development 2.</p>
+                </div>
+            </div>
+            <footer>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mySkills.html">My Skills</a></li>
+                    <li><a href="contactMe.html">Contact Me</a></li>
+                </ul>
+                <p>Copyright © 2023 Liam Fitzpatrick</p>
+            </footer>
+        </div>
+    </body>
+</html>
